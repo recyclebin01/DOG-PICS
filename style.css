@@ -55,7 +55,7 @@ img{
     transition: transform 0.3s ease;
 }
 button{
-    background-color: #333;
+    background-color:rgb(202, 86, 206);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -63,12 +63,17 @@ button{
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 1.2rem;
-    width: 40vw;
+    width: 30vw;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
 
 }
 button:hover{
-    background-color: #d30707;
-    padding: 10px;
+    background-color: rgb(91, 234, 146);
+    padding: 20px;
     transition: all 0.5s ease;
 }
 button:active{
