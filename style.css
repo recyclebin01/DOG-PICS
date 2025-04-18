@@ -50,11 +50,29 @@ button{
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 1.2rem;
+    width: 40vw;
 
 }
 button:hover{
-    background-color: #555;
+    background-color: #d30707;
+    padding: 10px;
+    transition: all 0.5s ease;
 }
 button:active{
     background-color: #777;
+}
+
+.loading{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #333;
+    border-top: 5px solid #d30707;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    /* display: none; */
+
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
