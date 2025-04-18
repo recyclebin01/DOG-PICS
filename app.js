@@ -1,10 +1,15 @@
 const image = document.querySelector("img");
 const button = document.querySelector("button");
+const loader = document.querySelector(".loader");
 const url = "https://dog.ceo/api/breeds/image/random";
-let loading = false;
+
+// let loading = false;
+
 
 function changeImage() {
-    loading = true;
+    // loading = true;
+    loader.style.display = "block";
+    image.style.display = "none";
 
     fetch (url)
     .then(Response => Response.json())
@@ -14,9 +19,10 @@ function changeImage() {
     })
     .catch(error => console.log("Error: " + error))
     .finally(() => {
-        loading = false;
+        loader.style.display = "none";
+        image.style.display = "block";
     });
 
 }
-// button.addEventListener("click", changeImage);
-// changeImage();
+button.addEventListener("click", changeImage);
+changeImage();

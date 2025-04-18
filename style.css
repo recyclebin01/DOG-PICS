@@ -35,11 +35,24 @@ h1{
     justify-content: center;
     gap: 20px;
     min-height: 50vh;
-    border: 2px solid #333;
+    
+    /* border: 2px solid #333; */
     width: 80%;
     width:clamp(300px, 50vw, 800px);
+    display: flex;
+    align-items: center;
+    max-height: 65vh;
+    overflow: auto;
 
 
+
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 button{
     background-color: #333;
@@ -62,14 +75,14 @@ button:active{
     background-color: #777;
 }
 
-.loading{
+.loader{
     width: 50px;
     height: 50px;
     border: 5px solid #333;
     border-top: 5px solid #d30707;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-    /* display: none; */
+    display: none;
 
 }
 @keyframes spin {
